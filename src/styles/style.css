@@ -1,0 +1,241 @@
+*{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+title{
+    display: none;
+}
+.menu{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(#B8860B, #D4AF37);
+    color: #fff;
+    flex-direction: row;
+}
+.logoImage{
+    background-image: url("../images/icon.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    border-radius: 50%;
+}
+.logo{
+    gap: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.logoName{
+    font-family: "MedievalSharp", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+.moon:active{
+    opacity: 0.5;
+}
+.sun:active{
+    opacity: 0.5;
+}
+.moon{
+    display: none;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuActive{
+    background-color: #fff;
+    color: #B8860B;
+}
+.menu a{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+nav{
+    height: 100%;
+}
+.menu a:hover{
+    background-color: #fff;
+    color: #B8860B;
+}
+.menuMobile{
+    display: none;
+}
+.menuMobileOpen{
+    display: none;
+}
+.sunMobile{
+    display: none;
+}
+.moonMobile{
+    display: none;
+}
+.comunityDesc{
+    font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    margin: 50px;
+    border-radius: 1%;
+    padding: 20px;
+    box-shadow: 0 0 10px #333;
+    background-color: #444;
+    width: 75vw;
+    color: #fff;
+}
+.comunityTitle{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff ;
+    margin-top: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+main{
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+h2{
+    margin-top: 15px;
+    font-size: 25px;
+}
+h3{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 20px;
+}
+h4{
+    margin-left: 10px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+
+@media (max-width:450px) and (max-height:900px){
+    *{
+        transition:all 0.2s ease;
+    }
+    .menuMobile{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logoImage{
+        width: 65px;
+        height: 65px;
+    }
+    .logoName div{
+        font-size: 23px;
+    }
+    .ninguem{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .menuMobileOpen{
+        display: none;
+        flex-direction: column;
+    }
+    .menuMobileItem{
+        padding: 15px 10px;
+        background-color: #B8860B;
+        color: #fff;
+        border-bottom: 1px solid #444;
+        border-top: 1px solid #444;
+        cursor: pointer;
+    }
+    .menuActive{
+        background-color: #fff;
+        color: #B8860B;
+    }
+    .menuMobileItem:active{
+        background-color: #fff;
+        color: #B8860B;
+    }
+    .menuMobileOthers{
+        background-color: #B8860B;
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 10px;
+        border-top: 1px solid #444;
+        border-bottom: 2px solid #000;
+
+    }
+    .theme{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction:row-reverse ;
+        width: 100%;
+    }
+    .sunMobile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .moonMobile{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .moonMobile:active{
+        opacity: 0.5;
+    }
+    .sunMobile:active{
+        opacity: 0.5;
+    }
+}
